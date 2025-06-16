@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    display: flex; /* Added for centering */
+    justify-content: center; /* Added for centering */
+    align-items: flex-start; /* Align to top of viewport */
+    min-height: 100vh; /* Ensure it takes full viewport height */
+    box-sizing: border-box;
+}
+
+#content {
+    max-width: 600px;
+    width: 100%; /* Responsive width */
+    margin: 20px auto; /* Adjust margin for top/bottom spacing */
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    background-color: #eee;
+    margin: 10px 0; /* Slightly more vertical margin */
+    padding: 12px; /* Increased padding */
+    border-radius: 4px;
+    font-size: 1.1em; /* Slightly larger font */
+    color: #555;
+    transition: background-color 0.3s ease;
+}
+
+li:hover {
+    background-color: #e0e0e0; /* Subtle hover effect */
+}
+
+/* Styling for loading/error messages */
+#api-data {
+    text-align: center;
+    font-style: italic;
+    color: #666;
+    padding: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    #content {
+        margin: 10px auto;
+        padding: 15px;
+    }
+    h1 {
+        font-size: 1.8em;
+    }
+    li {
+        font-size: 1em;
+        padding: 10px;
+    }
+}
