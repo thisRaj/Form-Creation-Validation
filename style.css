@@ -1,0 +1,77 @@
+body {
+    font-family: 'Inter', sans-serif; /* Changed font to Inter */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Use min-height for better responsiveness */
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px; /* Add padding for smaller screens */
+    box-sizing: border-box;
+}
+
+form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Add gap for spacing between elements */
+}
+
+label {
+    margin-bottom: 0px; /* Adjust margin as gap handles spacing */
+    font-weight: bold;
+    color: #333;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 0px; /* Adjust margin as gap handles spacing */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%; /* Make width 100% and rely on padding/box-sizing */
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#form-feedback {
+    margin-top: 10px;
+    padding: 10px;
+    color: #d8000c;
+    background-color: #ffbaba;
+    border-radius: 4px;
+    display: none; /* Initially hide the feedback div */
+    font-size: 0.9em; /* Slightly smaller font for feedback */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    form {
+        padding: 15px;
+        margin: 0 10px; /* Add horizontal margin */
+    }
+
+    input, button {
+        font-size: 1em; /* Ensure font size is readable */
+    }
+}
