@@ -1,10 +1,10 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function() { // Changed to a traditional function
     // Select the form and feedback division
     const form = document.getElementById('registration-form');
     const feedbackDiv = document.getElementById('form-feedback');
 
     // Add event listener for form submission
-    form.addEventListener('submit', (event) => {
+    form.addEventListener('submit', function(event) { // Changed to a traditional function
         // Prevent default form submission to the server
         event.preventDefault();
 
